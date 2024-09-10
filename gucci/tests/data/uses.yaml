@@ -1,0 +1,14 @@
+- key: methane_flare
+  type: transient
+  gases:
+    - key: methane
+      quantity: 10.0
+- key: methane_stove
+  type: device
+  initial_gases:
+    - key: methane
+      quantity: 1.0
+  emission:
+    type: exponential
+    rate: 1.0
+    rate_unit_per: month
